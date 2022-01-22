@@ -4,8 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rpm
-{
+namespace ClassLibrary1
+{ 
     public class MalardDuck : Duck
     {
         public override string display()
