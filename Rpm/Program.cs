@@ -10,7 +10,19 @@ namespace Rpm
     {
         static void Main(string[] args)
         {
-           
+            MalardDuck malardDuck = new MalardDuck();
+            RedheadDuck redheadDuck = new RedheadDuck();
+
+            Duck[] ducks = new Duck[] { malardDuck, redheadDuck };
+
+            for (int i = 0; i < ducks.Length; i++)
+            {
+                Console.WriteLine(ducks[i].swim());
+                Console.WriteLine(ducks[i].quack());
+                Console.WriteLine(ducks[i].display());
+            }
+
+            Console.ReadKey();
         }
     }
 }
