@@ -5,12 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace ClassLibrary1
-{ 
-    public class MalardDuck : Duck
+{
+    public class MalardDuck : Duck, Flyable, Quackable
     {
         public override string display()
         {
             return "display" + this.GetType();
         }
+        public string fly()
+        {
+            return "fly";
+        }
+        public string quack()
+        {
+            return "quack";
+        }
     }
 }
+
+
