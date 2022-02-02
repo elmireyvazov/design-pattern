@@ -8,10 +8,15 @@ namespace ClassLibrary1
 {
     public abstract class Duck
     {
+        FlyBehavior flyBehavior;
+        QuackBehavior quackBehavior;
+
         public string swim()
         {
-            return "swim" + this.GetType();
+            return "Буль буль буль";
         }
         public abstract string display();
+
+
     }
 }
