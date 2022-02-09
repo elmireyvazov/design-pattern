@@ -8,9 +8,6 @@ namespace ClassLibrary1
 {
     public class DecoyDuck:Duck
     {
-        public override string display()
-        {
-            return "display" + this.GetType();
-        }
+
     }
 }

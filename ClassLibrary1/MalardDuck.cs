@@ -8,20 +8,10 @@ namespace ClassLibrary1
 {
     public class MalardDuck : Duck
     {
-        public override string display()
+        public MalardDuck ()
         {
-            return "display" + this.GetType();
+            fl
         }
-        public string fly()
-        {
-            return "fly";
-        }
-        public string quack()
-        {
-            return "quack";
-        }
-        public MalardDuck 
-            { }
          
     }
 }

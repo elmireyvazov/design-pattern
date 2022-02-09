@@ -43,7 +43,6 @@
   <ItemGroup>
     <Compile Include="DecoyDuck.cs" />
     <Compile Include="Duck.cs" />
-    <Compile Include="Flyable.cs" />
     <Compile Include="FlyBehavior.cs" />
     <Compile Include="FlyNoWay.cs" />
     <Compile Include="FlyWithWings.cs" />

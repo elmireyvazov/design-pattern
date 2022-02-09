@@ -15,8 +15,26 @@ namespace ClassLibrary1
         {
             return "Буль буль буль";
         }
-        public abstract string display();
+        public  string display()
+        {
+            return GetType() + "" + flyBehavior.GetType() + "" + quackBehavior.GetType(); 
+        }
 
-
+        public string fly()
+        {
+            return flyBehavior.fly();
+        }
+        public string quack()
+        {
+            return quackBehavior.quack();
+        }
+        public void setFlyBehavior(FlyBehavior f)
+        {
+            flyBehavior = f;
+        }
+        public void setQuackBehavior(QuackBehavior q)
+        {
+            quackBehavior = q;
+        }
     }
 }
