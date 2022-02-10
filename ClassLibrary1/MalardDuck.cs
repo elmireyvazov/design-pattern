@@ -10,7 +10,9 @@ namespace ClassLibrary1
     {
         public MalardDuck ()
         {
-            fl
+            flyBehavior = new FlyWithWings();
+            quackBehavior = new Squeak();
+
         }
          
     }

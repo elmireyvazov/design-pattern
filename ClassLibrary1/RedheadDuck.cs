@@ -8,7 +8,11 @@ namespace ClassLibrary1
 {
     public class RedheadDuck : Duck
     {
-
+        public RedheadDuck ()
+        {
+            flyBehavior = new FlyWithWings();
+            quackBehavior = new Squeak();
+        }
     }
 
 }

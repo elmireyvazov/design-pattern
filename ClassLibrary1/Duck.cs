@@ -8,8 +8,8 @@ namespace ClassLibrary1
 {
     public abstract class Duck
     {
-        FlyBehavior flyBehavior;
-        QuackBehavior quackBehavior;
+      public  FlyBehavior flyBehavior;
+      public  QuackBehavior quackBehavior;
 
         public string swim()
         {

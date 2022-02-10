@@ -6,8 +6,13 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-    public class DecoyDuck:Duck
+    public class DecoyDuck : Duck
     {
+        public DecoyDuck() 
+        {
+            flyBehavior = new FlyNoWay();
+            quackBehavior = new MuteQuack();
+        }
 
     }
 }

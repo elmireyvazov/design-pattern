@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace ClassLibrary1
 {
-   public  class RubberDuck : Duck
+    public class RubberDuck : Duck
     {
+        public RubberDuck()
+        {
+            flyBehavior = new FlyNoWay();
+            quackBehavior = new Squeak();
+        }
     }
 }
