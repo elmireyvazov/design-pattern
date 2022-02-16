@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BE927BD8-DE77-4A89-808D-B61711EB6BB1}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>Rpm</RootNamespace>
-    <AssemblyName>Rpm</AssemblyName>
+    <ProjectGuid>{F7C6D60D-9879-492E-86BA-1C6E4F18F28D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassLibrary1</RootNamespace>
+    <AssemblyName>ClassLibrary1</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,17 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="DecoyDuck.cs" />
+    <Compile Include="Duck.cs" />
+    <Compile Include="FlyBehavior.cs" />
+    <Compile Include="FlyNoWay.cs" />
+    <Compile Include="FlyWithWings.cs" />
+    <Compile Include="MalardDuck.cs" />
+    <Compile Include="MuteQuack.cs" />
+    <Compile Include="Quack.cs" />
+    <Compile Include="Quackable.cs" />
+    <Compile Include="QuackBehavior.cs" />
+    <Compile Include="RedheadDuck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\ClassLibrary1\ClassLibrary1.csproj">
-      <Project>{f7c6d60d-9879-492e-86ba-1c6e4f18f28d}</Project>
-      <Name>ClassLibrary1</Name>
-    </ProjectReference>
+    <Compile Include="RubberDuck.cs" />
+    <Compile Include="Squeak.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
